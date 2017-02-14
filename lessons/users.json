@@ -1,0 +1,1 @@
+users = '[{"login":"login@login.com","password":"pass"},{"login":"admin@admin.com","password":"pass2"}]'
