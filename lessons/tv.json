@@ -1,0 +1,67 @@
+{
+    {
+        "brand": "LG",
+        "name": "84UB980V",
+        "prize": 229999,
+        "screen_diagonal": 84,
+        "smart_tv": true,
+        "screen_resolution": "3840x2160",
+        "wi_fi": true,
+        "hz": 1300
+    },{
+        "brand": "Sony",
+        "name": "KDL-55W808C",
+        "prize": 29999,
+        "screen_diagonal": 55,
+        "smart_tv": true,
+        "screen_resolution": "1920x1080",
+        "wi_fi": true,
+        "hz": 800
+    },{
+        "brand": "Samsung",
+        "name": "UE55KU6000UXUA",
+        "prize": 29999,
+        "screen_diagonal": 55,
+        "smart_tv": true,
+        "screen_resolution": "3840x2160",
+        "wi_fi": true,
+        "hz": 1300
+    },{
+        "brand": "Samsung",
+        "name": "UE22H5600AKXUA",
+        "prize": 6399,
+        "screen_diagonal": 22,
+        "smart_tv": true,
+        "screen_resolution": "1920x1080",
+        "wi_fi": true,
+        "hz": 100
+    },{
+        "brand": "Xiaomi Mi",
+        "name": "TV3",
+        "prize": 31499,
+        "screen_diagonal": 60,
+        "smart_tv": true,
+        "screen_resolution": "3840x2160",
+        "wi_fi": true,
+        "hz": 120
+    },{
+        "brand": "Samsung",
+        "name": "UE60KU6000UXUA",
+        "prize": 41999,
+        "screen_diagonal": 60,
+        "smart_tv": true,
+        "screen_resolution": "3840x2160",
+        "wi_fi": true,
+        "hz": 1300
+    },{
+        "brand": "Mystery Electronics",
+        "name": "MTV-3231LW",
+        "prize": 4599,
+        "screen_diagonal": 32,
+        "smart_tv": false,
+        "screen_resolution": "1366x768",
+        "wi_fi": false,
+        "hz": ""
+    }
+
+}
