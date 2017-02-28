@@ -62,17 +62,17 @@ function deleteCharacter(charName){
 }
 
 
-//player.getCharacter(charName){
-//    var charList = this.characters;
-//    for(key in charList){
-//        if(charList[key].name == charName){
-//            console.log(charList[key]);
-//            break;
-//        } else {
-//            console.log(charName + ' не существует')
-//        }
-//    }
-//}
+player.getCharacter(charName){
+    var charList = this.characters;
+    for(key in charList){
+        if(charList[key].name == charName){
+            console.log(charList[key]);
+            break;
+        } else {
+            console.log(charName + ' не существует')
+        }
+    }
+}
 
 
 Entities.Character.prototype = Object.create(Entities.Base.prototype)
