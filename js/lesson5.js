@@ -166,11 +166,38 @@ Entities.Player.prototype.getCharacter = function(id) {
         throw "Can't find character";
     }
     return chars[0];
-
 }
+
+Entities.Player.prototype.kill = function(id) {
+    var chars = this.characters;
+    for (var key in chars) {
+        if (chars[key].id != id) continue;
+        this.characters.splice(key, 1);
+    }
+    return this;
+}
+
 
 Entities.Character.prototype = Object.create(Entities.Base.prototype)
 Entities.Character.constructor = Entities.Character;
+
+
+// Entities.Character.prototype.defend = function(attack) {
+//     this.heath = this.heath - (attack * Math.random())
+//     if (this.heath < 0) {
+//         throw 'Defeated';
+//     }
+// }
+
+
+// Entities.Character.prototype.attack = function(character) {
+//     if (!(character instanceof Entities.Character)) {
+//         throw "Can't attack character";
+//     }
+//     var attackMethod = skills.fire;
+//     character.defend(attackMethod);
+//     // this.characters.push(character);
+// }
 
 var player = new Entities.Player({
     name: 'player1',
@@ -212,5 +239,24 @@ for (var i = 4; i >= 0; i--) {
 }
 
 
-console.log(player);
-console.log(player2);
+
+// if (this.character[key].id == if) {
+// this.characterthis.character[key].splice();
+
+// }
+
+// var char1 = player1.getCharacter(1);
+// var char2 = player1.getCharacter(4);
+
+// while (true) {
+//     try {
+//         char1.attack(char2);
+//         char2.attack(char1);
+//     } catch (e) {
+//         console.log(e);
+//         break;
+//     }
+// }
+
+// console.log(player);
+// console.log(player2);
