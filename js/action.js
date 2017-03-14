@@ -1,6 +1,7 @@
 function fight(p1, p2) {
     var char1 = p1.getRandomCharacter();
     var char2 = p2.getRandomCharacter();
+    var win;
     maxhealth = Math.max(char1.health, char2.health);
 
     setTimeout(function fun() {
@@ -12,18 +13,21 @@ function fight(p1, p2) {
             if (char1.health < 1) {
                 char1.health = 0;
                 p1.kill(char1.id);
-                char2.health += maxhealth;
+                char2.maxHP += maxhealth;
                 TEMPLATE.createUsersHealthBlock(char1, char2);
+                win = char2;
             } else if (char2.health < 1) {
                 char2.health = 0;
                 p2.kill(char2.id);
-                char1.health += maxhealth;
+                char1.maxHP += maxhealth;
                 TEMPLATE.createUsersHealthBlock(char1, char2);
+                win = char1;
             }
             TEMPLATE.render();
+            TEMPLATE.createUsersHealthBlock(char1, char2, win);
             return;
         }
-        TEMPLATE.createUsersHealthBlock(char1, char2);
+        TEMPLATE.createUsersHealthBlock(char1, char2, win);
         fightTimer = setTimeout(fun, 100);
     }, 200);
 

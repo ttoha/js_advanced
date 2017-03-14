@@ -3,12 +3,13 @@ function getRandom(min, max) {
 }
 
 var USERS = [];
-var logDiv = document.querySelector('.scrolldiv');
+var logDiv = document.querySelector('.scrolldivinner');
 
 
 function create_characters(count, player) {
     console.log(player);
     for (var i = count; i >= 0; i--) {
+
         player.attachCharacter(new Entities.Character({
             name: 'Character' + i,
             defaultAtack: [{
@@ -253,7 +254,7 @@ var TEMPLATE = {
             }
         }
     },
-    createUsersHealthBlock: function(char1, char2){
+    createUsersHealthBlock: function(char1, char2, win){
         var char1name = document.querySelector('#char1Name');
         var char2name = document.querySelector('#char2Name');
         var char1halth = document.querySelector('#char1HP');
@@ -271,6 +272,15 @@ var TEMPLATE = {
 
         var char1MP = 100/ char1.maxMP * char1.mana + '%';
         var char2MP = 100/ char2.maxMP * char2.mana + '%';
+
+        char1name.style.color = "#000";
+        char2name.style.color = "#000";
+
+        if(win==char1){
+            char1name.style.color = "green"
+        } else if (win==char2) {
+            char2name.style.color = "green"
+        }
 
         char1name.innerHTML = char1.name;
         char2name.innerHTML = char2.name;

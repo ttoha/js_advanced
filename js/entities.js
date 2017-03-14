@@ -97,7 +97,6 @@ Entities.Character.prototype.attack = function(character) {
 //    }
 
 
-    console.log(this);
     var attackMethod;
     var newSkills = [];
 

@@ -28,6 +28,10 @@
     text-align:center;
 }
 
+.scrolldivinner {
+    position: absolute;
+    left:0; right:0; bottom:0;
+}
 </style>
 
 </head>
@@ -59,8 +63,8 @@
 
 			<div class="panel panel-default">
 			  <div class="panel-heading">Fight LOG</div>
-			  <div class="panel-body scrolldiv">
-
+			  <div class="panel-body scrolldiv" style="position:relative; height:200px; overflow:auto">
+                  <div class="scrolldivinner"></div>
 			  </div>
 			</div>
 
