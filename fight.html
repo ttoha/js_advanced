@@ -22,6 +22,11 @@
     background-color: rgba(0,0,0,.8);
 }
 
+.hpmp {
+    position:absolute;
+    left:0; right:0; top:0;
+    text-align:center;
+}
 
 </style>
 
@@ -56,6 +61,31 @@
 			  <div class="panel-heading">Fight LOG</div>
 			  <div class="panel-body scrolldiv">
 
+			  </div>
+			</div>
+
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-md-12 createUsersHealthBlock">
+
+			<div class="panel panel-default">
+			  <div class="panel-heading">Charters</div>
+			  <div class="panel-body">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <h2 id="char1Name"></h2>
+                          <div style="position:relative"><span class="hpmp" id="char1HPnum"></span><div id="char1HP" style="background-color:red; height:20px"></div></div>
+                          <br />
+                          <div style="position:relative"><span class="hpmp" id="char1MPnum"></span><div id="char1MP" style="background-color:blue; height:20px"></div></div>
+                      </div>
+                      <div class="col-md-6">
+                          <h2 id="char2Name"></h2>
+                          <div style="position:relative"><span class="hpmp" id="char2HPnum"></span><div id="char2HP" style="background-color:red; height:20px"></div></div>
+                          <br />
+                          <div style="position:relative"><span class="hpmp" id="char2MPnum"></span><div id="char2MP" style="background-color:blue; height:20px"></div></div>
+                      </div>
+                  </div>
 			  </div>
 			</div>
 
